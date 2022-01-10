@@ -1,0 +1,47 @@
+*{
+    background-color: burlywood;
+    border: cyan;
+    border-radius: 10% 10%;
+}
+.circle{
+    position: relative;
+    border-width: medium;
+    height: 100%;
+    width: 150%;
+
+}
+.shape{
+    background-color: skyblue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.h1{
+    text-align: center;
+    background-color: darkorange;
+    border-radius:100px;
+    color: darkviolet;
+}
+#square{
+    height: 100px;
+    width: 100px;
+    background:deepskyblue;
+}
+#rectangle{
+    height: 100px;
+    width:  200px;
+    background: fuchsia;
+}
+#circle{
+    height: 200px;
+    width:  200px;
+    background: white;
+    border-radius: 50%;
+}
+#oval{
+    height:100px;
+    width: 200px;
+    background: orange;
+    border-radius: 100px / 50px;
+    }
