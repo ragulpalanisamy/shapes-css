@@ -576,8 +576,10 @@ btn:active {
   border: 1px solid grey;
   border-radius: 10px; 
   padding: 10px;
+  display: none;
 }
 .nav{
+  display: none;
   margin: 10px;
   text-align: center;
   background-attachment: fixed;
@@ -591,17 +593,18 @@ btn:active {
 }
 main{
   margin: 10px;
-  background-color: beige;
-  background: forestgreen;
   text-align: center;
-  color: whitesmoke;
-  font-size: x-large;
+  color: rgba(245, 245, 245, 0);
+  background-image: url(https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/07/23090714/nature-1024x682.jpeg);
+  background-size: 100%;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  font-size: 10rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border: 1px solid grey;
   border-radius: 10px;
   padding: 10px;
   flex-grow: 1;
- 
 }
 body{
   background-image: rgb(91, 171, 196);
@@ -611,6 +614,7 @@ body{
 }
 
 .foot{
+  display: none;
   background-color: aqua;
   text-align: center;
   color: whitesmoke;
