@@ -564,16 +564,24 @@ btn:active {
 
  */
 
+ /*** VARIABLE****/
+ :root{
+  --bgcolor: grey;
+  --color: yellow;
+  --alt-bgcolor: black;
+  --alt-color: whitesmoke;
+ }
+ 
 .head{
   text-align: center;
   background-image: url(https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
   display: -webkit-inline-flex;
   display: inherit;
   display: wrap;
-  color: yellow;
+  color: var(--color);
   font-size: x-large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border: 1px solid grey;
+  border: 1px solid var(--bgcolor);
   border-radius: 10px; 
   padding: 10px;
   display: none;
@@ -583,11 +591,11 @@ btn:active {
   margin: 10px;
   text-align: center;
   background-attachment: fixed;
-  background-color: black;
-  color: whitesmoke;
+  background-color: var(--alt-bgcolor);
+  color: var(--alt-color);
   font-size: x-large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border: 1px solid grey;
+  border: 1px solid var(--bgcolor);
   border-radius: 10px;
   padding: 10px;
 }
@@ -601,7 +609,7 @@ main{
   -webkit-background-clip: text;
   font-size: 10rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border: 1px solid grey;
+  border: 1px solid var(--bgcolor);
   border-radius: 10px;
   padding: 10px;
   flex-grow: 1;
@@ -617,10 +625,10 @@ body{
   display: none;
   background-color: aqua;
   text-align: center;
-  color: whitesmoke;
+  color: var(--alt-color);
   font-size: x-large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border: 1px solid grey;
+  border: 1px solid var(--bgcolor);
   border-radius: 10px;
   padding: 10px;
   bottom: 0;
