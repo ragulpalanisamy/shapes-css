@@ -566,12 +566,57 @@ btn:active {
 
  /*** VARIABLE****/
  :root{
+   /*** VARIABLE****/
   --bgcolor: grey;
   --color: yellow;
   --alt-bgcolor: black;
   --alt-color: whitesmoke;
+   /***square****/
+   --sq-bg: papayaWhip;
+   --sq-size: max(150px, 20vw);
  }
- 
+ main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: min(4vw, 15px);
+  padding: 10px 0;
+  margin: auto;
+  flex-grow: 1;
+ }
+.square{
+  background-color: var(--sq-bg);
+  width: var(--sq-size);
+  height: var(--sq-size);
+  border: 1px solid var(--bgcolor); 
+  border-radius: 15px;
+  display: grid;
+  place-content: center;
+  font-size:4rem;
+  box-shadow: inset;
+}
+.square--hig{
+  background-color: blue;
+  width: var(--sq-size);
+  height: var(--sq-size);
+  border: 1px solid var(--bgcolor); 
+  border-radius: 15px;
+  display: grid;
+  place-content: center;
+  font-size:4rem;
+  box-shadow: inset;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgcolor: black;
+    --altbgcolor: #333;
+    --radial-color: rgb(168, 90, 90);
+    --square-bg: rgb(165, 84, 165);
+  }
+  
+}
+ /* 
 .head{
   text-align: center;
   background-image: url(https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1nfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
@@ -657,7 +702,7 @@ footer{
   grid-template-columns: 100%;
   text-align: center;
 }
-
+ */
 
 
 
