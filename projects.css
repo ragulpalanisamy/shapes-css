@@ -565,14 +565,16 @@ btn:active {
  */
 
  /*** VARIABLE****/
-
+/* 
  :root{
    /*** VARIABLE****/
+   /*
   --bgcolor: grey;
   --color: yellow;
   --alt-bgcolor: black;
   --alt-color: whitesmoke;
    /***square****/
+   /*
    --sq-bg: papayaWhip;
    --sq-size: max(150px, 20vw);
  }
@@ -603,6 +605,7 @@ div:first-child {
     transform: scaleX(120%);
     transform: skewX(-10deg);
  */
+ /*
   background-color: blueviolet;
 }
 div:nth-child(2){
@@ -611,7 +614,7 @@ div:nth-child(2){
   transform: rotateY(180deg);
   transform: scaleY(120%);
   transform: skewY(-10deg);
- */
+ 
 }
 div:last-child{
   background-color: cornflowerblue;
@@ -619,7 +622,7 @@ div:last-child{
   transform: rotate(180deg,180deg);
   transform: scale(50%,50%);
   transform: skew(10deg,10deg);
- */
+ 
 }
 
 div:hover{
@@ -655,7 +658,7 @@ animate{
 
 div:last-child:hover{
   transform: rotate(36 0deg);
-}
+} */
 /* 
 .square--hig{
   background-color: blue;
@@ -765,13 +768,70 @@ footer{
 }
  */
 
- */
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
 
+ :root{
+  --HEADER-BGCOLOR: gray;
+  --HEADER-COLOR: whitesmoke;
+ }
 
+ html{
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+ }
 
+ body{
+  min-height: 100vh;
+  display:flex;
+  flex-flow: column nowrap;
+ }
 
+ header{
+  background-color: var(--HEADER-BGCOLOR);
+  color: var(--HEADER-COLOR);
+ }
 
+.sec{
+  padding: 0.25rem 0.25rem;
+  display: flex;
+  flex-grow: row nowrap;
+  justify-content: space-between;
+}
 
+.menu{
+  background-color: transparent;
+  border:none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after{
+    background-color: var(--HEADER-COLOR);
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.menu-icon::before,
+.menu-icon::after{
+  content: "";
+}
+
+.menu-icon::before{
+  transform: translate(-20px,-12px)
+}
 
 
 
