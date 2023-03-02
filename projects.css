@@ -908,7 +908,7 @@ nav a:hover, nav a:focus {
   font-size: 25px;  
   }  
   
- */
+ *//* 
  header{
   background-color: rgba(92, 216, 175, 0.664);
   padding: 10px;
@@ -980,8 +980,8 @@ nav a:hover, nav a:focus {
   display: flex;
   align-items: center;
  }
-
-/*  .tribute{
+ */
+  .tribute{
  text-align: center;
   font-family: 'Times New Roman', Times, serif;
   border: 1px solid gray;
@@ -998,11 +998,36 @@ nav a:hover, nav a:focus {
  }
  .figure{
   text-align: center;
-  
+  height: 100%;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
- */
 
+ img{
+  border-radius: 50%;
+  border: 5px solid rgb(233, 210, 8);
+   }
+   h3{
+    font-weight: bold;
+    text-align: center;
 
+   }
+   dd{
+    background-color: rgba(39, 115, 182, 0.37);
+    text-align: center;
+   }
+   
+   
+h2{
+  text-align: center;
+}
+h4{
+  text-align: center;
+
+}
+summary{
+  background-color: rgba(233, 149, 40, 0.767);
+}
 
 
 
