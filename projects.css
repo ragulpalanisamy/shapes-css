@@ -909,8 +909,79 @@ nav a:hover, nav a:focus {
   }  
   
  */
+ header{
+  background-color: rgba(92, 216, 175, 0.664);
+  padding: 10px;
+  position: sticky;
+  overflow: hidden;
+  top:0;
+  width: 100%;
+}
+ .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
- .tribute{
+ a{
+  position: sticky;
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  height: auto;
+ }
+ a:hover{
+  background-color: rgb(219, 157, 23);
+  border-radius: 10px;
+  color: rgb(201, 41, 67);
+  text-decoration: solid;
+ }
+ a:active{
+  color: red;
+ }
+ a:visited{
+  background-color: rgb(206, 34, 34);
+ }
+ #section-1{
+  background-color: rgb(69, 68, 139);
+  min-height: 100vh;
+  font-size: 120px;
+  display: flex;
+  align-items: center;
+ }
+ section{
+  background-color: antiquewhite;
+  display: flex;
+  flex-grow: 1;
+ }
+ 
+ #section-2{
+  background-color: rgb(49, 219, 182);
+  min-height: 100vh;
+  font-size: 120px;
+  display: flex;
+  align-items: center;
+
+ }
+ 
+ #section-3{
+  background-color: rgb(206, 219, 22);
+  min-height: 100vh;
+  font-size: 120px;
+  display: flex;
+  align-items: center;
+
+ }
+ 
+ #section-4{
+  background-color: rgb(204, 106, 25);
+  min-height: 100vh;
+  font-size: 120px;
+  display: flex;
+  align-items: center;
+ }
+
+/*  .tribute{
  text-align: center;
   font-family: 'Times New Roman', Times, serif;
   border: 1px solid gray;
@@ -929,7 +1000,7 @@ nav a:hover, nav a:focus {
   text-align: center;
   
  }
-
+ */
 
 
 
