@@ -1025,8 +1025,17 @@ h4{
   text-align: center;
 
 }
-summary{
+.contain{
   background-color: rgba(233, 149, 40, 0.767);
+  border-radius: 10px;
+  border:1px solid gray;
+}
+p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-variant:normal;
+  font-weight: lighter;
+  text-align: justify;
+  
 }
 
 
