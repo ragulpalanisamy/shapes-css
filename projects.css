@@ -1038,5 +1038,11 @@ p{
   
 }
 
+img:hover{
+  border: 3px solid greenyellow;
+  transition: border-color 1s ease;
+  transform: scale(2);
+  transition: red 0.4s ease-in-out;
+}
 
 
