@@ -981,7 +981,7 @@ nav a:hover, nav a:focus {
   align-items: center;
  }
  */
-  .tribute{
+/*   .tribute{
  text-align: center;
   font-family: 'Times New Roman', Times, serif;
   border: 1px solid gray;
@@ -1046,3 +1046,62 @@ img:hover{
 }
 
 
+ */
+
+ body{
+  background-color: rgb(68, 144, 211);
+ }
+ #card{
+  height: 300px;
+  width: 500px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.521);
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+ }
+ #h1{
+  color:rgb(243, 220, 15);
+  background-color: grey;
+  padding: auto;
+  margin: 10px;
+ }
+ .number{
+  border: 2px solid grey;
+  font-size: large;
+  color: darkslateblue;
+ }
+ .number:active{
+  transform: scaleX(1.2);
+ }
+ .btn{
+  border:2px soid yellowgreen;
+  border-radius: 10px;
+  text-align: center;
+  color:rgb(127, 224, 17);
+  width: fit-content;
+  height:25px;
+ }
+ .btn:hover{
+  background-color: brown;
+  cursor: pointer;
+ }
+ .btn:active{
+  background-color: blue;
+ }
+ #p{
+  color: mediumblue;
+  background-color: aquamarine;
+  margin: 20px;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bolder;  
+}
+select{
+  border:1px solid grey;
+  border-radius: 10px;
+  width: 50%;
+}
