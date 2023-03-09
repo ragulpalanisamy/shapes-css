@@ -1084,6 +1084,8 @@ img:hover{
   color:rgb(127, 224, 17);
   width: fit-content;
   height:25px;
+  justify-content: center;
+  align-items: left;
  }
  .btn:hover{
   background-color: brown;
@@ -1139,4 +1141,25 @@ ul{
   color: white;
   border-radius: 10px;
   border:1px solid black;
+}
+
+div{
+  width: 200px;
+  height: 200px;
+  border: 2px solid palevioletred;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+  background-color: blanchedalmond;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
