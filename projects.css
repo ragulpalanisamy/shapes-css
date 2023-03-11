@@ -1149,17 +1149,32 @@ div{
   border: 2px solid palevioletred;
   animation: myAnim 2s ease 0s 1 normal forwards;
   background-color: blanchedalmond;
+  
 }
 @keyframes myAnim {
 	0% {
-		opacity: 1;
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
 	}
 
-	50% {
-		opacity: 0.2;
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
 	}
 
-	100% {
-		opacity: 1;
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
 	}
 }
