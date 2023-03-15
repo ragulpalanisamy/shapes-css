@@ -660,7 +660,7 @@ function myFunction() {
 	document.getElementsByTagName("option").innerHTML = b[0]; */
 	 
 
-let btn = document.getElementById("btn");
+/* let btn = document.getElementById("btn");
 let color = document.getElementById("color");
 let wrap = document.getElementById("wrap");
 let back = wrap.getElementsByTagName("div");
@@ -715,4 +715,345 @@ for(let val of input){
 		sum+=val;
 	}
 }
-console.log(sum);
+console.log(sum); */
+
+//array reduce
+/* let a =[
+	['a','b','c'],
+	['c','b','d'],
+	['e','d','f']
+];
+
+console.log(a.flat());
+let count = a.flat().reduce(
+	(acc,el) =>{
+		if(acc[el]){
+			acc[el]++;
+		}
+		else{
+			acc[el]=1;
+		}
+		return acc;
+	}
+	,{});
+console.log(count);
+
+console.clear();
+
+//remove duplicates 
+let arr = [4,6,2,3,1,1,3,5,7,8,4,3];
+
+let dup = new Set(arr);
+/* .filter((c,ind) =>{
+	return arr.indexOf(c) === ind;
+}); */
+	/* console.log(dup);
+
+	//abbrivate first letter in a word
+	let n = "Robert Andrew George";
+	let res = n.charAt(0)+""+ n.charAt(7)+""+ n.charAt(14);
+	console.log(res);	
+
+	//add positive number
+
+	let z=[6,-5,7,-2,4,6,-1];
+	let co=0;
+	for(let i=0; i<z.length;i++){
+		if(z[i] > 0){
+			co += z[i];
+		}
+	}
+
+	console.log(co);
+
+	//closure
+
+	function add(x){
+		return function(y){
+			return x+y;
+		}
+	}
+	let ad = add(25);
+	console.log(ad(1));
+
+	let f;
+	f.add(6);
+	f.add('h');
+	f.add(9);
+	console.log(f); */ 
+
+
+// Add two numbers and return their address with equal 
+/* 	let twoSum = function(nums, target) {
+		for(let i=0;i<nums.length;i++){
+			for(let j=i+1;j<nums.length;j++){
+				if(nums[i] + nums[j] == target){
+					return [i,j];
+				}
+			}
+		}
+	};
+	 */
+
+
+/* 	class user{
+		static count=0;
+		constructor(name,age){
+			this.name = name;
+			this.age = age;
+			user.count++;
+		}
+
+		login(){
+			console.log(`hi, ${this.name}`);
+			console.log(`Welcome back , ${this.name}`);
+		}
+		logout(){
+			console.log("You logged Out");
+		}
+	}
+
+	let user1 = new user("Ragul",21);
+	let user2 = new user("sachin",13);
+ 	console.log(user1);
+	user1.login();
+	user1.logout();
+	console.log(user2);
+	user2.login();
+	console.log(" " + user.count);
+
+	class subscriber extends user{
+		constructor(name,age){
+			super(name,age);
+			this.storage = 100;
+		}
+		message(){
+			alert(`You have 100GB free Storage`);
+		}
+		//method overridding from base class method.
+		login(){
+			console.log("Thanks for Enrolling.");
+		}
+	}
+
+	let sub1 = new subscriber("raj",21);
+	console.log(sub1);
+	sub1.login();
+	sub1.message();
+ */	
+	//without using a class we can create object:
+/* 
+	function user(name,age){
+		this.name=name;
+		this.age=age;
+	}
+	user.prototype.login  = function(){
+		alert(`Hi ,${this.name}`);
+		alert(`welcome back, ${this.name}`)
+	}
+	let user1 = new user('Ragul',21);
+	console.log(user1);
+	user1.login();
+
+	//get and set
+
+	class student{
+		constructor(name,sec){
+			this._name=name;
+			this._sec=sec;
+		}
+		get stud(){
+			return 	`${this._name} and the section ${this._sec}`;
+		}
+		set stud(_name){
+				if(_name  != 0){
+					alert('Not A Number');
+				}
+		}
+	}
+
+	let stud1 = new student(12,'A');
+	console.log(stud1.stud);
+
+	 */
+//setTimeOut and SetInterval.
+/* 
+setInterval(() => alert("Welcome!..."),2000);
+
+console.log("hi,....");
+
+function synch(){
+	console.log("1");
+	console.log("2");
+	console.log("3");
+}
+synch();
+
+setTimeout(() => console.log("3"),1000);
+setTimeout(() => console.log("2"),2000);
+setTimeout(() => console.log("1"),3000);
+setTimeout(() => console.log("Let's Go"),3500);
+ */
+//promise
+/* 
+const takal = new Promise((resolve,reject) => {
+	let booking = true;
+	if(booking){
+		resolve();
+	}
+	else{
+		reject();
+	}
+})
+
+takal.then(success).catch(failure);
+
+function success(){
+	alert("Thanks Buddy , I will share the amount.");
+}
+function failure(){
+	alert("OOPS Something went wrong and you can book a bus ticket");
+}
+
+
+ let frd1 = new Promise((resolve,reject) => {
+	let reached = true;
+	if(reached){
+		setTimeout(resolve,3000,"Raj reached Home");
+	}
+	else{
+		reject("raj is not reached");
+	}
+ }) 
+
+  let frd2 = new Promise((resolve,reject) => {
+	let reached = false;
+	if(reached){
+		setTimeout(resolve,2000,"Sachin reached Home");
+	}
+	else{
+		reject("sachin is not reached");
+	}
+ }) 
+*//* 
+  let frd3 = new Promise((resolve,reject) => {
+	let reached = false;
+	if(reached){
+		setTimeout(resolve,1000,"Ragul reached Home");
+	}
+	else{
+	 	reject("Ragul is not reached");
+	}
+ })  */
+/*
+ Promise.any([frd1,frd2,frd3])
+ .then((message) => console.log(message))
+ .catch((message) => console.log(message));
+ */
+/* 
+ try{
+	num = prompt("Enter a Number:");
+	if(num == ''){
+		throw "Cannot be empty";
+	}
+	if(isNaN(num)){
+		throw "Enter a valid number";
+	}
+	alert(num ** 2);
+ }
+ catch(error){
+	alert(error);
+ } */
+/* 
+ async function fun(){
+	return "hello";
+ }
+ fun();
+
+ async function async(){
+	try{
+	console.log("hi...");
+	res = await frd3;
+	console.log(res);
+	console.log("bye");
+	}
+	catch(err){
+		console.log(err);
+	}
+ }
+
+ async();
+ */
+/* 
+ fetch('https://api-thirukkural.vercel.app/api?num=4')
+ .then(re => re.json())
+ .then(ms => console.log(ms.line1,ms.line2))
+ .catch(err => console.log(err)) */
+
+ /* fetch('https://bhagavad-gita3.p.rapidapi.com/v2/chapters/')
+ .then(res => res.json())
+ .then(ms => ms)
+ .catch(err => console.log(err));
+
+ let n=prompt("Enter the String:");
+   regexp = /^[A-Z]/;
+   if(regexp.test(n)){
+	alert("Upper Case");
+   }
+   else{
+	alert("Lower Case");
+   }
+   */
+
+/*    let n=prompt("Enter a String:");
+   regexp =/[aeiou]/gi;
+   if(regexp.test(n)){
+	alert("Vowels");
+   }
+   else{
+	alert("Consonents");
+   } */
+/* 
+   let myPromise = new promise(function(resolve,reject){
+
+	let h=1;
+	if(h){
+		resolve();
+		console.log(setTimeout("Yes Its fine"),3000);
+	}
+	else{
+		reject();
+		alert("Its not Fine");
+	}
+   });
+   myPromise.then( value => console.log(value))
+   myPromise.then(value => console.log(value))
+   .catch(err => console.log(err));
+
+   let n = document.querySelector("#loader");
+   document.getElementById("x").onclick = function{
+	n.style.display = "none";
+   } */
+
+   let ul = document.getElementById("ul");
+   let f= document.getElementById("add");
+   let input = document.querySelector("input");
+
+   f.addEventListener('click',() =>{
+	let item = input.value;
+	input.value ='';
+	let d = document.createElement('li');
+	let litext = document.createElement('span');
+	let listbtn = document.createElement('button');
+
+	d.appendChild(litext);
+	litext.textContent = item;
+	d.appendChild(listbtn);
+	listbtn.textContent = 'Delete';
+	ul.appendChild(d);
+
+	listbtn.addEventListener('click',()=>{
+		ul.removeChild(d);
+	});
+
+   });
