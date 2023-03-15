@@ -1047,7 +1047,7 @@ img:hover{
 
 
  */
-
+/* 
  body{
   background-color: rgb(68, 144, 211);
  }
@@ -1181,14 +1181,14 @@ div{
 	}
 }
 
-.anime{
+.anime{ */
   /* animation-name: ragul;
   animation-duration: 2s;
   animation-direction:alternate;
   animation-iteration-count: 1;
   animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1) ;
    */
-   animation: myAnim 2s ease 0s 1 normal forwards;
+   /* animation: myAnim 2s ease 0s 1 normal forwards;
   width: 300px;
   height: 100px;
   border-radius: 10px;
@@ -1197,7 +1197,7 @@ div{
   right:0;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 /* 
 @keyframes ragul {
   from {
@@ -1212,7 +1212,7 @@ div{
   }
 }
  */
-@keyframes myAnim {
+/* @keyframes myAnim {
 	0% {
 		transform: translate(0);
 	}
@@ -1282,8 +1282,9 @@ body {
 }
 
 .loader{
-  border: 16px solid lightgray;
+  border: 16px solid grey;
   border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -1292,5 +1293,43 @@ body {
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  50% { transform: rotate(180deg); }
+  100% {transform: rotate(360deg);}
+}
+ */
+ body{
+  background-color: aquamarine;
+  box-sizing: border-box;
+ }
+h1{
+  font-family: monospace;
+  font-weight: bolder;
+  color: orange;
+  font-variant: small-caps;
+  text-align: center;
+}
+.shop{
+  font-family: monospace;
+  font-weight: bolder;
+  text-align: justify;
+  border: 2px solid grey;
+  border-radius: 10px;
+  font-size: x-large;
+  color: orangered;
+}
+label{
+  text-align: center;
+  font-size: x-large;
+  align-items: justify;
+}
+.add{
+ border: 2px solid purple;
+ border-radius: 20px;
+ font-size: large;
+}
+ul{
+  text-decoration: none;
+  font-size: x-large;
+  font-family: monospace;
+  color: orangered;
 }
