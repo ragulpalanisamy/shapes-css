@@ -1601,3 +1601,37 @@ main {
   background: var(--clr-primary-5);
   color: var(--clr-primary-1);
 }
+h1 {
+  color: #ffc;
+  background-color: #009;
+  font-variant: small-caps;
+  letter-spacing: .5em;
+  word-spacing: 1.5em;
+}
+h2 {
+  color: #009;
+  background-color: #ffc;
+  text-transform: lowercase;
+  letter-spacing: .25em;
+  word-spacing: .75em;
+  text-align: right;
+  font-size: 1.5em;
+  margin: -25px;
+  padding: 40px;
+}
+
+h2:before, h2:after {
+    content: "!!! ";
+    background: red;
+    color: #fc0;
+}
+
+#story {
+  font-family: monospace;
+  border-left: 5px solid orange;
+  border-right: 10px solid teal;
+}
+
+#story:hover {
+  font-size: 2em;
+}
