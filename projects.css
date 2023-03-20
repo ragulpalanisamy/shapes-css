@@ -1834,3 +1834,29 @@ h1 {
     text-align: left;
   }
 }
+
+
+@media only screen and (min-width: 1024px) {
+  body{
+    background-color: aqua;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body{
+    background-color: blueviolet;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body{
+  background-color: lightseagreens;
+}
+}
+
+@media only screen and (min-width: 350px) and (max-width: 760px) {
+  body{
+    background-color: #4CAF50;
+  }
+}
