@@ -5,3 +5,10 @@ div{
     border: 1px solid gray;
     transition: all 0.4s ease;
 }
+#generate{
+    border-radius: 10px;
+    border: 2px solid grey;
+    color: yellowgreen;
+    width: 250px;
+    height: 60px;
+}
