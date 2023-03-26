@@ -1,4 +1,4 @@
-
+/* 
 div{
     height:  200px;
     width: 200px;
@@ -57,3 +57,19 @@ div{
 		.next {
 			right: 20px;
 		}
+*/		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			text-align: center;
+		  }
+		  
+		  #quiz {
+			font-size: 24px;
+			margin-bottom: 20px;
+		  }
+		  
+		  button {
+			font-size: 16px;
+			padding: 10px 20px;
+		  }
+		  
